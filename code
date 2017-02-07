@@ -1,0 +1,29 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+const prefix = "a!";
+
+client.on('ready', () => {
+  console.log('I Bring War!');
+});
+
+client.on('message', message => {
+  if (message.content === prefix + 'role ' + 'Knights') {
+    message.reply('have succesfully been assigned to their faction.');
+      message.member.addRole('275857537193213962');
+    console.log('Member has been succesfully assigned');
+
+client.on('message', message => {
+  if (message.content === prefix + 'role ' + 'Vikings') {
+    message.reply('have succesfully been assigned to their faction.');
+      message.member.addRole('275857674715922432');
+    console.log('Member has been succesfully assigned');
+
+client.on('message', message => {
+  if (message.content === prefix + 'role ' + 'Samurai') {
+    message.reply('have succesfully been assigned to their faction.');
+      message.member.addRole('275857743644983297');
+    console.log('Member has been succesfully assigned');
+}}); 
+}}); 
+}});
